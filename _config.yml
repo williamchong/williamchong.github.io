@@ -25,8 +25,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 domain: blog.williamchong.cloud
 url: "https://blog.williamchong.cloud" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  williamchong
+
 # Google Analytics
 google_analytics: G-E5N6G10H7E
 
