@@ -27,6 +27,8 @@ domain: blog.williamchong.cloud
 url: "https://blog.williamchong.cloud" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
+# Google Analytics
+google_analytics: G-E5N6G10H7E
 
 # Build settings
 theme: minima
