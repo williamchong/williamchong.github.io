@@ -55,8 +55,11 @@ Image 使用 [https://hub.docker.com/r/tombull/haproxy/](https://hub.docker.com/
 
 另外因為 docker-compose 暫時未有方法指定個別 container 嘅 gateway ，需要在遊戲伺服器嘅 container 內開啟 NET_ADMIN，同係 container entry 時行 ip command ，設定 gateway。
 
+{% highlight bash %}
 ip route delete default
 ip route add default via 172.20.0.10
+{% endhighlight %}
+
 係 HAProxy 開一個接受 PROXY protocol 嘅埠，連接到遊戲伺服器時覆寫返原連接嘅 IP ，就可以起到 transparent proxy 嘅效果。
 
 {% highlight yaml %}
