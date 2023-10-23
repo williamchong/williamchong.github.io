@@ -7,6 +7,8 @@ image: /assets/images/2017-09-28-proxy-protocol-for-everything/1.webp
 tags: docker haproxy devop proxy
 ---
 
+For cantonese version, please check [here]({% post_url 2017-09-28-proxy-protocol-for-everything %})
+
 Originally posted on [Lakoo's medium](https://m.lakoo.com/docker-haproxy-proxy-protocol-for-everyone-f0da0533d87b) on 2017-09-28, translated to english
 
 MMORPG Experience Sharing / How to make any TCP network service in a container support PROXY protocol using Docker networking.
