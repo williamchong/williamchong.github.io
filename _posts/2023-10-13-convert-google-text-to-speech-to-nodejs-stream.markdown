@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Convert Google text to speech API result to streamed HTTP response"
+title:  "Convert Google text to speech API result to HTTP streamed response"
 date:   2023-10-13 10:02:00 +0800
 categories: code
 image: /assets/images/2023-10-13-convert-google-text-to-speech-to-nodejs-stream/cover.png

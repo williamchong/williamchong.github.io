@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Convert Azure text to speech API result to streamed response"
+title:  "Convert Azure text to speech API result to HTTP streamed response"
 date:   2023-10-15 02:40:00 +0800
 categories: code
 image: /assets/images/2023-10-15-convert-azure-text-to-speech-to-nodejs-stream/azure.png
@@ -8,7 +8,7 @@ tags: javascript nodejs azure
 ---
 ![Azure text to speech API](/assets/images/2023-10-15-convert-azure-text-to-speech-to-nodejs-stream/azure.png)
 
-Previously, we covered [Google's Text-to-Speech API]({% post_url 2023-10-13-convert-google-text-to-speech-to-nodejs-stream %}). Similarly, when using the [Azure version of the API](https://azure.microsoft.com/en-us/products/ai-services/text-to-speech), we might prefer to receive a streamed response instead of a buffer.
+Previously, we covered [Google's Text-to-Speech API]({% post_url 2023-10-13-convert-google-text-to-speech-to-nodejs-stream %}). Similarly, when using the [Azure version of the API](https://azure.microsoft.com/en-us/products/ai-services/text-to-speech), we might prefer to receive a HTTP streamed response instead of a buffer.
 
 Unlike Google, which only supports the whole buffer as the response format, Azure API allows us to set different [audioConfig](https://learn.microsoft.com/en-us/javascript/api/microsoft-cognitiveservices-speech-sdk/audioconfig?view=azure-node-latest) options as output, such as `fromAudioFileOutput`, `fromDefaultSpeakerOutput` and `fromStreamOutput`. It's worth noting that `audioConfig` is also used for output configuration in other instances, but we won't cover that here.
 
