@@ -9,11 +9,11 @@ tags: javascript nodejs google cloud
 
 ![Google cloud text to speech API](/assets/images/2023-10-13-convert-google-text-to-speech-to-nodejs-stream/cover.png)
 
-When using Google Cloud's Text-to-Speech API, the default behavior of the [synthesizeSpeech()](https://googleapis.dev/nodejs/text-to-speech/latest/google.cloud.texttospeech.v1.TextToSpeech.html#synthesizeSpeech2) method is to return the [audioContent](https://googleapis.dev/nodejs/text-to-speech/latest/google.cloud.texttospeech.v1.ISynthesizeSpeechResponse.html) as a complete buffer.
+When using the Google Cloud Text-to-Speech API, the default behavior of the [`synthesizeSpeech()`](https://googleapis.dev/nodejs/text-to-speech/latest/google.cloud.texttospeech.v1.TextToSpeech.html#synthesizeSpeech2) method, as described in the `synthesizeSpeech()` documentation, is to return the [`audioContent`](https://googleapis.dev/nodejs/text-to-speech/latest/google.cloud.texttospeech.v1.ISynthesizeSpeechResponse.html) as a complete buffer.
 
-However, if you want to enable streaming playback for long audios, you can convert the buffer to a file streaming response. This can be achieved by converting the buffer to a Node.js `stream` object using the [PassThrough](https://nodejs.org/api/stream.html#class-streampassthrough) class from the Node.js Stream API.
+However, if you want to enable streaming playback for long audios, you can convert the buffer to a file streaming response. To achieve this, you can utilize the [PassThrough](https://nodejs.org/api/stream.html#class-streampassthrough) class from the Node.js Stream API, as outlined in the `PassThrough` documentation.
 
-The sample bug below is a snippet from a Nuxt 3 project.
+Here is a sample snippet from a Nuxt 3 project that demonstrates this:
 
 {% highlight javascript %}
 import { TextToSpeechClient } from "@google-cloud/text-to-speech/build/src/v1";
