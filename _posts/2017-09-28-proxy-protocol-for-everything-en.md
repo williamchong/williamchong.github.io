@@ -3,7 +3,7 @@ layout: post
 title: "Docker + HAProxy = PROXY protocol for Everything"
 date: 2017-09-28 00:00:00 +0800
 categories: english
-image: /assets/images/2017-09-28-proxy-protocol-for-everything/1.webp
+image: /assets/images/2017-09-28-proxy-protocol-for-everything/1.png
 tags: docker haproxy devop proxy
 ---
 
@@ -23,7 +23,7 @@ Traditional transparent proxy configurations require kernel support for TPROXY a
 
 Solution:
 
-![https://www.haproxy.com/blog/using-haproxy-with-the-proxy-protocol-to-better-secure-your-database/](/assets/images/2017-09-28-proxy-protocol-for-everything/1.webp)
+![https://www.haproxy.com/blog/using-haproxy-with-the-proxy-protocol-to-better-secure-your-database/](/assets/images/2017-09-28-proxy-protocol-for-everything/1.png)
 uses HAProxy + PROXY protocol as a transparent proxy.
 
 First, within the game server's docker network, we launch an HAProxy container to act as the default gateway for the entire docker network.

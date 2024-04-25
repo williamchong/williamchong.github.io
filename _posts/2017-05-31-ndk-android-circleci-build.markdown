@@ -3,7 +3,7 @@ layout: post
 title: "Android NDK project 用 Circleci 2.0 自動出 build"
 date: 2017-05-31 00:00:00 +0800
 categories: cantonese
-image: /assets/images/2017-05-31-ndk-android-circleci-build/1.webp
+image: /assets/images/2017-05-31-ndk-android-circleci-build/1.png
 tags: android ndk devop circleci
 ---
 
@@ -82,17 +82,17 @@ destination: apks/
 
 3。登入 circleci，揀返啱個 github project 開始第一個 build，成功之後嘅成品 apk 係 artifact 到下載得返
 
-![成功嘅話 apk 就會係 artifacts 出現](/assets/images/2017-05-31-ndk-android-circleci-build/1.webp)
+![成功嘅話 apk 就會係 artifacts 出現](/assets/images/2017-05-31-ndk-android-circleci-build/1.png)
 成功嘅話 apk 就會係 artifacts 出現
 
 同樣道理，proguard mapping 同 symbol 都可以用 step 儲成 artifact，但要留意 artifact 並唔係俾用家作永久保存用，放一排之後有可能會俾人 del！
 
 4。有需要可以去 project setting 設定埋 Build forked pull requests，咁每個 pull request 就會自動觸發 circleci ，結果會自動係返 github 顯示
 
-![private repo 嘅 Build forked pull requests 要手動開啟](/assets/images/2017-05-31-ndk-android-circleci-build/2.webp)
+![private repo 嘅 Build forked pull requests 要手動開啟](/assets/images/2017-05-31-ndk-android-circleci-build/2.png)
 private repo 嘅 Build forked pull requests 要手動開啟
 
-![成功就會出綠剔](/assets/images/2017-05-31-ndk-android-circleci-build/3.webp)
+![成功就會出綠剔](/assets/images/2017-05-31-ndk-android-circleci-build/3.png)
 成功就會出綠剔
 
 小結：目前 Teon 用咗 circleci 自動 build PR 後，無論係技術同事 review PR 定係 QA 同事做 feature QA 都方便唔少。其實 circleci 使用環境參數配合 gradle 嘅 build variant 設定可以做到配合唔同 workflow 嘅更多變化，有機會再寫

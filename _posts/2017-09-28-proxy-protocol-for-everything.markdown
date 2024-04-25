@@ -3,7 +3,7 @@ layout: post
 title: "魔術！乜叉嘢都支援 PROXY protocol！"
 date: 2017-09-28 00:00:00 +0800
 categories: cantonese
-image: /assets/images/2017-09-28-proxy-protocol-for-everything/1.webp
+image: /assets/images/2017-09-28-proxy-protocol-for-everything/1.png
 tags: docker haproxy devop proxy
 ---
 For english version, please click [here]({% post_url 2017-09-28-proxy-protocol-for-everything-en %})
@@ -26,7 +26,7 @@ MMORPG 經驗分享 / How to make any TCP network service in container support P
 
 解決方法：
 
-![https://www.haproxy.com/blog/using-haproxy-with-the-proxy-protocol-to-better-secure-your-database/](/assets/images/2017-09-28-proxy-protocol-for-everything/1.webp)
+![https://www.haproxy.com/blog/using-haproxy-with-the-proxy-protocol-to-better-secure-your-database/](/assets/images/2017-09-28-proxy-protocol-for-everything/1.png)
 圖來自 https://www.haproxy.com/blog/using-haproxy-with-the-proxy-protocol-to-better-secure-your-database/
 使用 HAProxy + PROXY protocol 作 transparent proxy。
 
